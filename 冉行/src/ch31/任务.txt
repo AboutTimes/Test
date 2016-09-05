@@ -1,0 +1,9 @@
+使用多线程+网络编程 实现一直不等的聊天
+
+需要分别创建服务器端和客户端 主要用于保存Socket
+
+1.  需要创建服务器端的 OutPutStream 线程
+2.  需要创建服务器端的 InPutStream  线程
+
+3.  需要创建客户端的 OutPutStream 线程
+4.  需要创建客户器端的 InPutStream  线程

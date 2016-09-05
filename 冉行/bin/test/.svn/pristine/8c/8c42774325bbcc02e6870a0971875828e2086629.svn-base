@@ -1,0 +1,28 @@
+package com.oracle.ch4;
+/**
+ * final最终：可以修饰方法和属性，类
+ * 1。修饰方法后，该方法不能被重写
+ * 2. 修饰属性后，该属性的值不能修改
+ * 3. 修饰类后，该类不能被继承
+ * @author Administrator
+ *
+ */
+public class Final1 {
+	public static void main(String[] args) {
+		Final2 f=new Final2();
+		//f.a=99;修饰属性后，值不能在进行修改
+		Final2 f1=new Final2();
+	}
+}
+final class  Final2{
+	//修饰属性时必须赋值
+	final int a=9;
+	//修饰方法后不能被继承
+	public final String f(){
+		return "";
+	}
+}
+//使用final修饰的所有信息都不能被继承
+class Final3 extends Final2{
+	
+}
